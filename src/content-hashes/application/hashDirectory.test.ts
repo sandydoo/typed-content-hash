@@ -189,7 +189,7 @@ const expected = {
     filePath: 'index.html',
     fileExtension: '.html',
     contents:
-      '<!DOCTYPE html>\n<html>\n\n<head>\n  <title>Tapas</title>\n\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\n  <link href="./index.jPrPHrTrxlk1.css" />\n</head>\n\n<body>\n  <div id="app">\n\n    <img srcset="./fake-image-x4.ooKWSSJ0apZX.png 4x,\n                 ./fake-image-x3.dnonbURMTOmA.png 3x,\n                 ./fake-image-x2.ng0eXyXAgxHn.png 2x,\n                 ./fake-image-x1.G6V284hJv-PY.png 1x" />\n\n    <template>\n      <img src="./template-image.MqBzdgoAuSgt.png" />\n    </template>\n  </div>\n\n  <script type="module" src="./index.MEc5qI_OWTs0.js"></script>\n</body>\n\n</html>\n',
+      '<!DOCTYPE html>\n<html>\n\n<head>\n  <title>Tapas</title>\n\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\n  <link href="./index.jPrPHrTrxlk1.css" />\n</head>\n\n<body>\n  <div id="app">\n\n    <img srcset="./fake-image-x4.ooKWSSJ0apZX.png 4x,\n                 ./fake-image-x3.dnonbURMTOmA.png 3x,\n                 ./fake-image-x2.ng0eXyXAgxHn.png 2x,\n                 ./fake-image-x1.G6V284hJv-PY.png 1x" />\n\n    <template>\n      <img src="./template-image.MqBzdgoAuSgt.png" />\n    </template>\n\n    <svg viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">\n      <image href="./svg-image._o3sKChWOs0C.png" />\n    </svg>\n  </div>\n\n  <script type="module" src="./index.MEc5qI_OWTs0.js"></script>\n</body>\n\n</html>\n',
     contentHash: {
       _tag: 'None',
     },
@@ -249,12 +249,21 @@ const expected = {
         specifier: './template-image.png',
       },
       {
+        fileExtension: '.png',
+        filePath: 'svg-image.png',
+        position: {
+          end: 534,
+          start: 519,
+        },
+        specifier: './svg-image.png',
+      },
+      {
         specifier: './index.js',
         filePath: 'index.js',
         fileExtension: '.js',
         position: {
-          start: 471,
-          end: 481,
+          start: 589,
+          end: 599,
         },
       },
     ],
@@ -505,6 +514,23 @@ const expected = {
       _tag: 'None',
     },
     isBase64Encoded: false,
+  },
+  'svg-image.png': {
+    contentHash: {
+      _tag: 'Some',
+      value: {
+        hash: '_o3sKChWOs0CWahSbDOMdWwAW64zMrnUGsad5fUlrArcBF8lMWj4ZLWN2Dm7f0HHok9Grz15IuVHJ_o5Hn1h_A',
+        type: 'hash',
+      },
+    },
+    contents: 'c3ZnLWltYWdlCg==',
+    dependencies: [],
+    fileExtension: '.png',
+    filePath: 'svg-image.png',
+    isBase64Encoded: true,
+    sourceMap: {
+      _tag: 'None',
+    },
   },
   'sw.js.map': {
     filePath: 'sw.js.map',

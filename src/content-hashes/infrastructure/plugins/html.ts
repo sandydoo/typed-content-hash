@@ -69,6 +69,7 @@ const searchMap: Readonly<Record<string, readonly string[]>> = {
   html: ['manifest'],
   iframe: ['longdesc', 'src'],
   img: ['longdesc', 'src', 'srcset'],
+  image: ['href'],
   input: ['formaction', 'src'],
   ins: ['cite'],
   link: ['href'],
